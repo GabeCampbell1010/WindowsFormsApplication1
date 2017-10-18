@@ -17,12 +17,15 @@ namespace WindowsFormsApplication1
             new Vector2(20,20), new Vector2(20,10),
             new Vector2(20,10), new Vector2(10,20)
         };
-
+        //adfg
         public void DrawStuff(Graphics g, Vector2 location)
         {
             for (int i = 0; i < shapePoints.Length; i+=2)
             {
-                g.DrawLine(Pens.Red, shapePoints[i].GetX(), shapePoints[i].GetY(), shapePoints[i+1].GetX(), shapePoints[i+1].GetY());
+                Vector2 start = location + shapePoints[i];
+                Vector2 end = location + shapePoints[i+1];
+
+                g.DrawLine(Pens.Red, start.GetX(), start.GetY(), end.GetX(), end.GetY());
             }
 
             //Font drawFont = new Font("Arial", 16);
