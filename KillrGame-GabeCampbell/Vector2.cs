@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KillrGame_GabeCampbell
 {
-    class Vector2
+    public class Vector2//is this supposed to be private?
     {
         private float x;
         private float y;

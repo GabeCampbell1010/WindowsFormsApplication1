@@ -1,0 +1,55 @@
+﻿ private void timer1_Tick(object sender, EventArgs e)
+        {//this is new
+            ship.update();
+            enemyship.update();
+            this.Invalidate();
+        }
+
+        //in spaceship class:
+        private void update()
+        {
+            Vector2 velocity = new Vector2(1, 1);
+            location = location + velocity;
+        }
+
+        //in killrgame constructor:
+        initializecompoinent
+        this.doublebuffered = true;
+        ship = new ship...;
+        enemyship = new enemyship...rand.next(0,this.Width) and then with height for the newvector 2 of the location
+        this.timer1.Start();
+
+        //make an enemy ship class which is bascially the same as spaceship, so it will inherit
+
+        //we made a mover class and spaceship and enemy spaceship inherit from it
+        //movier construcvtor contents:
+        this.location = Location;
+        shape = new Shape(shapepoints)
+
+        //also keep draw and update in the mover class and take velocity out of update and make it a protected
+        //member variable
+        //in spaceship:
+        public Spaceship(Vector2 location) : base(location, shapePoints){ velocity = new Vector2(1,1)}
+
+        //in enemy ship csontrxcutro:
+        public EnemySHip(Vector2 location) : base(location, shapepoihts){
+            velocity = new Vector2(Random.next(-2, 3), rand.next(-2, 3));//int can convert to float easily
+        }
+
+        //class enemy army
+        private List<enemyship> ship = new list<enemyship>();
+        private const int n_ships = 10;
+        private static Random rand = new random;
+        //in enemyarmy constructor:
+        (int widt, int height)
+            for(     namespace<ships){enemyship enemyship = new enemyship with random position
+    ships.add(enemyship)}>
+    //and back to enemy class
+   //there is a pulic update mehtod with a foreach ship in ships mehtod 
+
+    //theres a moveer container class with a list of movers doing something
+    //and thre a foreach loop in moveer container, and enemyarmy inherits from mover container
+
+    //and therers a bullet and bulletcontainer class as well, enemy army is copied into bullewt container
+    //in bullet container there is spawnbullets method that counts up and if counter is divisible by zero
+    //it creates a bullet nullet = new buillt(location, velocity)_
